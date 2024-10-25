@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="responsive_contact.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <!-- <link rel="stylesheet" href="style_header.css"> -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 
     <title>Contact Us </title>
 
     <style>
+        /* pour les background images  */
         .div_2_1 {
-            /* background-color: orangered; */
             background-image: url('images/image_2.jpg');
             background-repeat: no-repeat;
             background-position: center;
@@ -24,22 +29,388 @@
         }
 
         .contact_3 {
-            /* background-color: green; */
             background-image: url('images/section_bas_forme.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-            /* opacity: 0.7 ; */
-
             width: 100%;
         }
+
+
+
+
+
+
+
+
+
+        :root {
+    --hover-color: #AE8964;
+    --text-color: black;
+    --title-color: rgba(88, 41, 0, 1);
+    --hr-color:rgb(88, 41, 1);
+  }
+header .sub-div{
+    background-color: #AE8964;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.container{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header{
+    height: 20vh;
+    border-bottom: solid 2px var(--hr-color);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+header .logo {
+    width: 35vw;
+    height: 10vh;
+}
+header .logo img{
+    width: 30%;
+    height: 100%;
+}
+
+header nav .nav-links {
+    width: 45vw;
+}
+header nav .nav-links ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a{
+    font-size: 15px;
+    color: var(--text-color);
+}
+header nav ul li a:hover{
+ color:  var(--hover-color);
+
+}
+.btn-inscription{
+    width: 15vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-inscription a{
+    padding: 6px 16px;
+    background-color: #582900;
+    color: #fff;
+    border-radius: 6px;
+}
+.btn-inscription a:hover{
+    background-color:  var(--hover-color);
+}
+header nav .menu a{
+   color: #582900;
+   display: none;
+}
+
+
+/* start responsiove header */
+/* -------------------- header responsive 1 ------------------ */
+@media only screen and (min-width: 961px) and (max-width: 1096px) {
+
+    header .sub-div{
+        font-size: 14px;
+    }
+    
+    header nav ul li a{
+        font-size: 14px;  
+    }
+    .btn-inscription a{
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+
+}
+/* -------------------- end responsive 1 ----------------------- */
+/* --------------------- header responsive 2 ----------------- */
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header .sub-div{
+        font-size: 13px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+}
+/* ----------------end responsive 2 ---------------------------- */
+/*  ----------------- header responsive 3 --------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 82vh;
+    }
+    header nav{
+
+        padding: 18px 0;
+
+    }
+    header .sub-div{
+        font-size: 12px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+/* ----------------------end responsive 3 ----------------------- */
+/* ---------------- header responsive 4 ----------------------- */
+@media only screen  and (min-width:803px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    
+    .main{
+        height: 82vh;
+    }
+    header nav{
+        padding: 18px 0;
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+/* -------------------------end responsive 4 ----------------------- */
+/* --------------- header responsive 5 ------------------------ */
+@media only screen  and (min-width: 761px) and (max-width: 802px){
+    .container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    header{
+        height: 16vh;
+    }
+    .main{
+        height: 84vh;
+    }
+    header nav{
+        padding: 12px 0;
+    
+    }
+    header .sub-div{
+        font-size: 10px;
+    }
+   
+    header nav ul li a{
+        font-size: 12px;
+    }
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+   
+}
+
+/* ------------------------------end responsive 5 ----------------------- */
+/* -------------------- header responsive 6 ------------------------- */
+.display{
+    display: none;
+}
+@media only screen  and (max-width: 761px){
+    header .sub-div{
+        display: none;
+    }
+    header nav .nav-links{
+        z-index: 1;
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+       width: 100%;
+
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+    
+    .btn-inscription a{
+        display: none;
+    }
+ 
+    header nav .menu a{
+        display: block;
+    }
+    header {
+        height: 12vh;      
+    }
+  
+    header .logo {
+        width: 100vw;
+        height: 6vh;
+    }
+   
+}
+
+/* ------------------------------end responsive 6 ----------------------- */
+
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+
+    header nav ul li a{
+        color: #fff;
+    }
+ 
+    header nav .nav-links{
+        position: absolute;
+        right: 0;
+        width: 60vw;
+        height: calc(100vh - 12vh);
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    header nav ul li a{
+        color: #fff;
+    }
+    header nav .nav-links{
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: 82vh;
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+}
+
+/* header responsive end -------------------------------------------------------------------------------------*/
+
+
+
+
+
     </style>
 </head>
 
 <body>
-    <!-- header ================================================================================================================================================== -->
 
+
+    <!-- ========================================================================================================================================== -->
     <section class="body_contact">
+        <!-- header ================================================================================================================================================== -->
+        <header>
+            <div class="sub-div">Découvrez nos artisans locaux au Maroc ! Profitez de la livraison gratuite pour toute
+                commande supérieure à 99 MAD !</div>
+            <nav class="container">
+                <!-- div 1-------------- -->
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+                <!-- div 2-------------- -->
+                <div id="navtoggle" class="nav-links" class="display" style="text-decoration: none;">
+                    <ul >
+                        <li><a href="home.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="product.html">Produits</a></li>
+                        <li><a href="product.html">Catégories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- div 3-------------- -->
+                <div class="btn-inscription">
+                    <a href="#">Inscription</a>
+                </div>
+                <div id="sideBar" class="menu">
+                    <a href="#"><span class="material-symbols-outlined">menu</span></a>
+                </div>
+
+            </nav>
+        </header>
+
 
         <!-- Section 1 =============================================================================================================================================== -->
         <section class="contact_1">
@@ -135,15 +506,51 @@
             </div>
         </section>
 
-    </section>
-    <!-- footer  =============================================================================================================================================== -->
 
+        <!-- footer  =============================================================================================================================================== -->
+
+        <footer>
+            <div class="footer-container">
+                <div class="part-1">
+                    <h4>ArtisanCraft<br><span>Marketplace</span></h4>
+                    <a href="">Inscription</a>
+                </div>
+                <!-- ------------------------------------------------ -->
+                <div class="part-2">
+                    <div class="sub-nav">
+                        <a href="home.html">Accueil</a>
+                        <a href="about.html">À propos</a>
+                        <a href="product.html">Produits</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.x.com"><i class="fa-solid fa-x"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------- -->
+            </div>
+        </footer>
+
+    </section>
+
+    <!-- =========================================================================================================================================================== -->
 
     <script src="js/valider_donnees.js"></script>
     <script src="js/valider_nom_prenom.js"></script>
     <script src="js/valider_numero_tele.js"></script>
     <script src="js/valider_email.js"></script>
     <script src="js/valider_message.js"></script>
+
+    <script>
+        const sideBar = document.getElementById("sideBar");
+        const elementDisplay = document.getElementById("navtoggle");
+         sideBar.onclick = function(){
+        elementDisplay.classList.toggle("display");
+        }
+    </script>
 </body>
 
 </html>

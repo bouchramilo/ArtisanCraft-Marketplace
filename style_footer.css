@@ -1,0 +1,168 @@
+/* ------------------------footer ------------------- */
+.box-footer-part{
+    box-shadow: 0 -5px 20px ;
+    margin-top: 50px;
+}
+.footer-container {
+   width: 90%;
+   margin: 0 auto;
+} 
+.footer-container .part-1 {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px;
+   border-bottom: 2px solid #AE8964; 
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+
+ }
+ 
+ .part-1, .part-2 {
+    flex: 1;
+ }
+ 
+ .part-2 {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .social-icons {
+    display: flex;
+    justify-content: space-between;
+ }
+footer{
+    background-color: #03224C;
+    margin-top: 10px;
+}
+.part-1{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+}
+.part-1 h4 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #ffffff;
+}
+.part-1 h4 span{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #AE8964;
+}
+.part-1 a{
+    padding: 7px 18px;
+    background-color: #582900;
+    color: #fff;
+    border-radius: 6px;
+}
+.part-1 a:hover{
+   border: none;
+   color: #fff;
+   background-color: #AE8964; 
+   cursor: pointer;
+ 
+}
+/* ----------------- footer part 2  */
+.part-2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+ }
+ 
+ .part-2 .sub-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    font-size: 14px;
+ }
+ 
+ .part-2 .sub-nav a:hover {
+    color: #AE8964;
+ }
+ 
+ .social-icons a {
+    margin: 0 12px;
+ }
+ 
+ .social-icons a i {
+    font-size: 18px; 
+    color: #fff;
+    transition: 0.3s ease;
+ }
+ 
+ .social-icons a:hover i {
+    color: #AE8964;
+    transform: scale(1.2); 
+ }
+ 
+ @media only screen and (max-width: 768px) {
+     .page4-home .temoignageClient h1 {
+         font-size: 36px;
+     }
+ 
+     .page4-home .temoignageClient p {
+         font-size: 15px;
+     }
+     .footer-container {
+        flex-direction: column;
+        text-align: center;
+     }
+  
+     .part-1, .part-2 {
+        flex-direction: column;
+        align-items: center;
+     }
+  
+     .part-1 a {
+       display: none;
+     }
+  
+     .part-2 {
+        flex-direction: column;
+        margin-top: 20px;
+     }
+  
+     .social-icons {
+        margin-top: 20px;
+     }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    
+     .page4-home .temoignageClient h1 {
+         font-size: 34px;
+     }
+ 
+     .page4-home .temoignageClient p {
+         font-size: 14px;
+     }
+     .footer-container {
+        width: 100%;
+        padding: 10px;
+     }
+  
+     .part-1 h4 {
+        font-size: 18px;
+     }
+  
+     .part-1 a {
+        padding: 5px 15px;
+        font-size: 14px;
+     }
+  
+     .part-2 .sub-nav a {
+        font-size: 12px;
+        padding: 8px;
+     }
+  
+     .social-icons a i {
+        font-size: 16px;
+     }
+  
+     .social-icons {
+        margin-top: 15px;
+     }
+  }

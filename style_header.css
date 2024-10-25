@@ -1,0 +1,324 @@
+:root {
+    --hover-color: #AE8964;
+    --text-color: black;
+    --title-color: rgba(88, 41, 0, 1);
+    --hr-color:rgb(88, 41, 1);
+  }
+header .sub-div{
+    background-color: #AE8964;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.container{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header{
+    height: 20vh;
+    border-bottom: solid 2px var(--hr-color);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+header .logo {
+    width: 35vw;
+    height: 10vh;
+}
+header .logo img{
+    width: 30%;
+    height: 100%;
+}
+
+header nav .nav-links {
+    width: 45vw;
+}
+header nav .nav-links ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a{
+    font-size: 15px;
+    color: var(--text-color);
+}
+header nav ul li a:hover{
+ color:  var(--hover-color);
+
+}
+.btn-inscription{
+    width: 15vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-inscription a{
+    padding: 6px 16px;
+    background-color: #582900;
+    color: #fff;
+    border-radius: 6px;
+}
+.btn-inscription a:hover{
+    background-color:  var(--hover-color);
+}
+header nav .menu a{
+   color: #582900;
+   display: none;
+}
+
+
+/* start responsiove header */
+/* -------------------- header responsive 1 ------------------ */
+@media only screen and (min-width: 961px) and (max-width: 1096px) {
+
+    header .sub-div{
+        font-size: 14px;
+    }
+    
+    header nav ul li a{
+        font-size: 14px;  
+    }
+    .btn-inscription a{
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+
+}
+/* -------------------- end responsive 1 ----------------------- */
+/* --------------------- header responsive 2 ----------------- */
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header .sub-div{
+        font-size: 13px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+}
+/* ----------------end responsive 2 ---------------------------- */
+/*  ----------------- header responsive 3 --------------------- */
+
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 82vh;
+    }
+    header nav{
+
+        padding: 18px 0;
+
+    }
+    header .sub-div{
+        font-size: 12px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+/* ----------------------end responsive 3 ----------------------- */
+/* ---------------- header responsive 4 ----------------------- */
+@media only screen  and (min-width:803px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    
+    .main{
+        height: 82vh;
+    }
+    header nav{
+        padding: 18px 0;
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+/* -------------------------end responsive 4 ----------------------- */
+/* --------------- header responsive 5 ------------------------ */
+@media only screen  and (min-width: 761px) and (max-width: 802px){
+    .container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    header{
+        height: 16vh;
+    }
+    .main{
+        height: 84vh;
+    }
+    header nav{
+        padding: 12px 0;
+    
+    }
+    header .sub-div{
+        font-size: 10px;
+    }
+   
+    header nav ul li a{
+        font-size: 12px;
+    }
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+   
+}
+
+/* ------------------------------end responsive 5 ----------------------- */
+/* -------------------- header responsive 6 ------------------------- */
+.display{
+    display: none;
+}
+@media only screen  and (max-width: 761px){
+    header .sub-div{
+        display: none;
+    }
+    header nav .nav-links{
+        z-index: 1;
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+       width: 100%;
+
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+    
+    .btn-inscription a{
+        display: none;
+    }
+ 
+    header nav .menu a{
+        display: block;
+    }
+    header {
+        height: 12vh;      
+    }
+  
+    header .logo {
+        width: 100vw;
+        height: 6vh;
+    }
+   
+}
+
+/* ------------------------------end responsive 6 ----------------------- */
+
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+
+    header nav ul li a{
+        color: #fff;
+    }
+ 
+    header nav .nav-links{
+        position: absolute;
+        right: 0;
+        width: 60vw;
+        height: calc(100vh - 12vh);
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    header nav ul li a{
+        color: #fff;
+    }
+    header nav .nav-links{
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: 82vh;
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+    }
+
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+}
+
+/* header responsive end -------------------------------------------------------------------------------------*/
